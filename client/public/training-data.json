@@ -1,0 +1,709 @@
+{
+  "athlete": {
+    "name": "Maylon Watson",
+    "age": 24,
+    "birthDate": "2001-01-05",
+    "weight": 80,
+    "height": 174,
+    "bodyFat": 14,
+    "currentPerformance": {
+      "5k": "22:00",
+      "11k": "60:00"
+    },
+    "goal": {
+      "race": "Maratona do Rio 2026",
+      "date": "2026-09-20",
+      "targetTime": "3:30:00",
+      "targetPace": "4:58"
+    }
+  },
+  "block1": {
+    "name": "Bloco 1 - Base Aeróbica e Adaptação",
+    "startDate": "2025-10-27",
+    "endDate": "2025-12-21",
+    "totalWeeks": 8,
+    "weeks": [
+      {
+        "weekNumber": 1,
+        "weekName": "Teste de Zonas + Base Aeróbica",
+        "totalDistance": 43,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "test",
+            "name": "TESTE DE ZONAS (Crítico)",
+            "description": "Teste de 5km All-Out",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00-6:30", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "distance": 5, "pace": "máximo", "description": "Teste: 5km no máximo esforço sustentável" },
+              { "type": "cooldown", "distance": 1, "pace": "6:30", "description": "Desaquecimento: 1km trote muito leve" }
+            ],
+            "totalDistance": 8,
+            "notes": "Estabelecer pace de referência para calcular zonas de treino"
+          },
+          {
+            "day": "Terça-feira",
+            "type": "rest",
+            "name": "Descanso Ativo",
+            "description": "Caminhada leve 20-30min OU Alongamento + mobilidade 30min",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "interval",
+            "name": "Treino de Ritmo Controlado",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 4, "distance": 1, "pace": "5:10", "recovery": "400m trote 2min", "description": "4 x 1km em pace 5:10/km" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 9
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "6km em pace confortável (5:40-6:00/km) - Foco em técnica de corrida",
+            "totalDistance": 6,
+            "pace": "5:40-6:00"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "speed",
+            "name": "Treino de Velocidade + Strides",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 6, "distance": 0.4, "pace": "4:30", "recovery": "200m trote 90seg", "description": "6 x 400m em pace 4:30/km" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m progressivos" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 8
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "description": "Foco em recuperação, hidratação e nutrição",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run Base",
+            "workouts": [
+              { "type": "main", "distance": 10, "pace": "5:30-5:40", "description": "10km em pace 5:30-5:40/km" },
+              { "type": "marathon_pace", "distance": 2, "pace": "5:10", "description": "Últimos 2km em pace 5:10/km (simulação ritmo maratona)" }
+            ],
+            "totalDistance": 12
+          }
+        ]
+      },
+      {
+        "weekNumber": 2,
+        "weekName": "Consolidação de Base",
+        "totalDistance": 47,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "easy",
+            "name": "Corrida Fácil + Strides",
+            "workouts": [
+              { "type": "main", "distance": 7, "pace": "5:40-6:00", "description": "7km em pace 5:40-6:00/km" },
+              { "type": "strides", "reps": 6, "distance": 0.1, "description": "6 strides de 100m progressivos" }
+            ],
+            "totalDistance": 7
+          },
+          {
+            "day": "Terça-feira",
+            "type": "strength",
+            "name": "Descanso Ativo",
+            "description": "Musculação (foco em fortalecimento para corrida)",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "interval",
+            "name": "Treino Intervalado",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 5, "distance": 1.2, "pace": "4:50", "recovery": "400m trote 2min", "description": "5 x 1200m em pace 4:50/km" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 11
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "6km em pace confortável (5:40-6:00/km)",
+            "totalDistance": 6,
+            "pace": "5:40-6:00"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "fartlek",
+            "name": "Fartlek + Strides",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 8, "duration": "2min", "paceHard": "4:40", "paceLow": "6:00", "description": "8 x 2min forte (pace 4:40/km) / 2min leve (pace 6:00/km)" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 9
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run Progressivo",
+            "workouts": [
+              { "type": "main", "distance": 10, "pace": "5:40", "description": "10km iniciando em pace 5:40/km" },
+              { "type": "marathon_pace", "distance": 4, "pace": "5:10", "description": "Últimos 4km em pace 5:10/km (pace maratona)" }
+            ],
+            "totalDistance": 14
+          }
+        ]
+      },
+      {
+        "weekNumber": 3,
+        "weekName": "Intensificação Controlada",
+        "totalDistance": 50,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "easy",
+            "name": "Corrida Fácil + Strides",
+            "workouts": [
+              { "type": "main", "distance": 8, "pace": "5:40-6:00", "description": "8km em pace 5:40-6:00/km" },
+              { "type": "strides", "reps": 6, "distance": 0.1, "description": "6 strides de 100m progressivos" }
+            ],
+            "totalDistance": 8
+          },
+          {
+            "day": "Terça-feira",
+            "type": "strength",
+            "name": "Descanso Ativo",
+            "description": "Musculação (fortalecimento)",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "tempo",
+            "name": "Tempo Run",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "distance": 6, "pace": "4:55", "description": "6km em pace 4:55/km (pace meia maratona)" },
+              { "type": "cooldown", "distance": 2, "pace": "6:00", "description": "Desaquecimento: 2km trote leve" }
+            ],
+            "totalDistance": 10
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "7km em pace confortável (5:40-6:00/km)",
+            "totalDistance": 7,
+            "pace": "5:40-6:00"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "speed",
+            "name": "Intervalado Curto + Strides",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 10, "distance": 0.4, "pace": "4:25", "recovery": "200m trote 90seg", "description": "10 x 400m em pace 4:25/km" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 9
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run com Trabalho de Pace",
+            "workouts": [
+              { "type": "main", "distance": 10, "pace": "5:30", "description": "10km em pace 5:30/km" },
+              { "type": "marathon_pace", "distance": 6, "pace": "5:10", "description": "6km em pace 5:10/km (pace maratona)" }
+            ],
+            "totalDistance": 16
+          }
+        ]
+      },
+      {
+        "weekNumber": 4,
+        "weekName": "Recuperação Ativa (Semana de Descarga)",
+        "totalDistance": 34,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "easy",
+            "name": "Corrida Fácil",
+            "description": "6km em pace 6:00/km (bem confortável)",
+            "totalDistance": 6,
+            "pace": "6:00"
+          },
+          {
+            "day": "Terça-feira",
+            "type": "rest",
+            "name": "Descanso Ativo",
+            "description": "Alongamento + mobilidade 30min",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "interval",
+            "name": "Treino Leve de Ritmo",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 3, "distance": 1, "pace": "5:00", "recovery": "400m trote 2min", "description": "3 x 1km em pace 5:00/km" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 7
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "5km em pace confortável (6:00/km)",
+            "totalDistance": 5,
+            "pace": "6:00"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "easy",
+            "name": "Corrida Fácil + Strides",
+            "workouts": [
+              { "type": "main", "distance": 6, "pace": "5:50", "description": "6km em pace 5:50/km" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m" }
+            ],
+            "totalDistance": 6
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run Reduzido",
+            "description": "10km em pace 5:30/km (confortável)",
+            "totalDistance": 10,
+            "pace": "5:30"
+          }
+        ]
+      },
+      {
+        "weekNumber": 5,
+        "weekName": "Retomada de Volume",
+        "totalDistance": 54,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "easy",
+            "name": "Corrida Fácil + Strides",
+            "workouts": [
+              { "type": "main", "distance": 8, "pace": "5:40", "description": "8km em pace 5:40/km" },
+              { "type": "strides", "reps": 6, "distance": 0.1, "description": "6 strides de 100m progressivos" }
+            ],
+            "totalDistance": 8
+          },
+          {
+            "day": "Terça-feira",
+            "type": "strength",
+            "name": "Descanso Ativo",
+            "description": "Musculação (fortalecimento)",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "interval",
+            "name": "Intervalado Misto",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 3, "description": "3 x (1200m pace 4:50/km + 800m pace 4:40/km)", "recovery": "400m trote entre cada série (2min)" },
+              { "type": "cooldown", "distance": 2, "pace": "6:00", "description": "Desaquecimento: 2km trote leve" }
+            ],
+            "totalDistance": 12
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "7km em pace confortável (5:40-6:00/km)",
+            "totalDistance": 7,
+            "pace": "5:40-6:00"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "fartlek",
+            "name": "Fartlek Progressivo + Strides",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 10, "duration": "1min", "paceHard": "4:30", "paceLow": "6:00", "description": "10 x (1min forte pace 4:30/km / 1min leve pace 6:00/km)" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 9
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run com Simulação",
+            "workouts": [
+              { "type": "main", "distance": 8, "pace": "5:40", "description": "8km em pace 5:40/km" },
+              { "type": "marathon_pace", "distance": 8, "pace": "5:10", "description": "8km em pace 5:10/km (pace maratona)" },
+              { "type": "cooldown", "distance": 2, "pace": "5:30", "description": "2km em pace 5:30/km (cool down)" }
+            ],
+            "totalDistance": 18
+          }
+        ]
+      },
+      {
+        "weekNumber": 6,
+        "weekName": "Preparação para Prova de 10km",
+        "totalDistance": 43,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "easy",
+            "name": "Corrida Fácil + Strides",
+            "workouts": [
+              { "type": "main", "distance": 8, "pace": "5:40", "description": "8km em pace 5:40/km" },
+              { "type": "strides", "reps": 6, "distance": 0.1, "description": "6 strides de 100m" }
+            ],
+            "totalDistance": 8
+          },
+          {
+            "day": "Terça-feira",
+            "type": "strength",
+            "name": "Descanso Ativo",
+            "description": "Musculação (fortalecimento)",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "tempo",
+            "name": "Tempo Run em Pace de 10km",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "distance": 7, "pace": "4:45", "description": "7km em pace 4:45/km (pace de 10km)" },
+              { "type": "cooldown", "distance": 2, "pace": "6:00", "description": "Desaquecimento: 2km trote leve" }
+            ],
+            "totalDistance": 11
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "6km em pace confortável (5:50/km)",
+            "totalDistance": 6,
+            "pace": "5:50"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "easy",
+            "name": "Corrida Fácil",
+            "description": "5km em pace 6:00/km (bem leve, pré-prova)",
+            "totalDistance": 5,
+            "pace": "6:00"
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "description": "Preparação mental e física para prova",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "race",
+            "name": "PROVA DE 10KM (Teste)",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "description": "Aquecimento: 2km trote + 4 strides" },
+              { "type": "race", "distance": 10, "targetTime": "47-48min", "targetPace": "4:45-4:50", "description": "Prova: 10km - Meta: 47-48min" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 13,
+            "notes": "Procurar prova de 10km na sua cidade para participar"
+          }
+        ]
+      },
+      {
+        "weekNumber": 7,
+        "weekName": "Recuperação Pós-Prova + Volume",
+        "totalDistance": 53,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "description": "Recuperação pós-prova",
+            "totalDistance": 0
+          },
+          {
+            "day": "Terça-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "6km em pace muito confortável (6:00/km)",
+            "totalDistance": 6,
+            "pace": "6:00"
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "interval",
+            "name": "Treino de Ritmo Controlado",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 4, "distance": 1.5, "pace": "4:55", "recovery": "400m trote 2min", "description": "4 x 1500m em pace 4:55/km" },
+              { "type": "cooldown", "distance": 2, "pace": "6:00", "description": "Desaquecimento: 2km trote leve" }
+            ],
+            "totalDistance": 10
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Fácil",
+            "description": "7km em pace 5:40/km",
+            "totalDistance": 7,
+            "pace": "5:40"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "speed",
+            "name": "Intervalado + Strides",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 8, "distance": 0.6, "pace": "4:35", "recovery": "200m trote 90seg", "description": "8 x 600m em pace 4:35/km" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 10
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run Progressivo",
+            "workouts": [
+              { "type": "main", "distance": 10, "pace": "5:40", "description": "10km em pace 5:40/km" },
+              { "type": "marathon_pace", "distance": 8, "pace": "5:10", "description": "8km em pace 5:10/km (pace maratona)" },
+              { "type": "cooldown", "distance": 2, "pace": "5:30", "description": "2km em pace 5:30/km" }
+            ],
+            "totalDistance": 20
+          }
+        ]
+      },
+      {
+        "weekNumber": 8,
+        "weekName": "Consolidação e Avaliação",
+        "totalDistance": 59,
+        "days": [
+          {
+            "day": "Segunda-feira",
+            "type": "easy",
+            "name": "Corrida Fácil + Strides",
+            "workouts": [
+              { "type": "main", "distance": 8, "pace": "5:40", "description": "8km em pace 5:40/km" },
+              { "type": "strides", "reps": 6, "distance": 0.1, "description": "6 strides de 100m" }
+            ],
+            "totalDistance": 8
+          },
+          {
+            "day": "Terça-feira",
+            "type": "strength",
+            "name": "Descanso Ativo",
+            "description": "Musculação (fortalecimento)",
+            "totalDistance": 0
+          },
+          {
+            "day": "Quarta-feira",
+            "type": "tempo",
+            "name": "Tempo Run Longo",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "distance": 8, "pace": "4:55", "description": "8km em pace 4:55/km (pace meia maratona)" },
+              { "type": "cooldown", "distance": 2, "pace": "6:00", "description": "Desaquecimento: 2km trote leve" }
+            ],
+            "totalDistance": 12
+          },
+          {
+            "day": "Quinta-feira",
+            "type": "easy",
+            "name": "Corrida Regenerativa",
+            "description": "7km em pace confortável (5:50/km)",
+            "totalDistance": 7,
+            "pace": "5:50"
+          },
+          {
+            "day": "Sexta-feira",
+            "type": "fartlek",
+            "name": "Fartlek + Strides",
+            "workouts": [
+              { "type": "warmup", "distance": 2, "pace": "6:00", "description": "Aquecimento: 2km trote leve" },
+              { "type": "main", "reps": 6, "duration": "3min", "paceHard": "4:40", "paceLow": "6:00", "description": "6 x 3min forte (pace 4:40/km) / 2min leve (pace 6:00/km)" },
+              { "type": "strides", "reps": 4, "distance": 0.1, "description": "4 strides de 100m" },
+              { "type": "cooldown", "distance": 1, "pace": "6:00", "description": "Desaquecimento: 1km trote leve" }
+            ],
+            "totalDistance": 10
+          },
+          {
+            "day": "Sábado",
+            "type": "rest",
+            "name": "Descanso Completo",
+            "totalDistance": 0
+          },
+          {
+            "day": "Domingo",
+            "type": "long",
+            "name": "Long Run Final do Bloco",
+            "workouts": [
+              { "type": "main", "distance": 12, "pace": "5:40", "description": "12km em pace 5:40/km" },
+              { "type": "marathon_pace", "distance": 8, "pace": "5:10", "description": "8km em pace 5:10/km (pace maratona)" },
+              { "type": "cooldown", "distance": 2, "pace": "5:30", "description": "2km em pace 5:30/km" }
+            ],
+            "totalDistance": 22
+          }
+        ]
+      }
+    ]
+  },
+  "strengthExercises": [
+    {
+      "id": 1,
+      "name": "Agachamento (Squat)",
+      "sets": 3,
+      "reps": "12-15",
+      "focus": "Quadríceps, glúteos, core",
+      "description": "Pés na largura do quadril, descer até 90°, manter coluna neutra"
+    },
+    {
+      "id": 2,
+      "name": "Avanço (Lunge)",
+      "sets": 3,
+      "reps": "10 (cada perna)",
+      "focus": "Quadríceps, glúteos, estabilidade",
+      "description": "Passo amplo à frente, joelho 90°, não ultrapassar ponta do pé"
+    },
+    {
+      "id": 3,
+      "name": "Ponte de Glúteo (Glute Bridge)",
+      "sets": 3,
+      "reps": "15",
+      "focus": "Glúteos, isquiotibiais, lombar",
+      "description": "Elevar quadril, contrair glúteos no topo, segurar 2seg"
+    },
+    {
+      "id": 4,
+      "name": "Deadlift Unilateral (Single Leg Deadlift)",
+      "sets": 3,
+      "reps": "10 (cada perna)",
+      "focus": "Isquiotibiais, glúteos, equilíbrio, core",
+      "description": "Perna de apoio levemente flexionada, tronco paralelo ao chão"
+    },
+    {
+      "id": 5,
+      "name": "Step-Up",
+      "sets": 3,
+      "reps": "12 (cada perna)",
+      "focus": "Quadríceps, glúteos, potência",
+      "description": "Subir em banco/degrau, força concentrada na perna de apoio"
+    },
+    {
+      "id": 6,
+      "name": "Prancha Frontal (Plank)",
+      "sets": 3,
+      "duration": "45-60 segundos",
+      "focus": "Core, estabilidade",
+      "description": "Cotovelos alinhados com ombros, corpo reto, abdômen contraído"
+    },
+    {
+      "id": 7,
+      "name": "Prancha Lateral (Side Plank)",
+      "sets": 3,
+      "duration": "30-45 segundos (cada lado)",
+      "focus": "Oblíquos, estabilidade lateral",
+      "description": "Cotovelo alinhado com ombro, quadril elevado"
+    },
+    {
+      "id": 8,
+      "name": "Superman",
+      "sets": 3,
+      "reps": "12",
+      "focus": "Lombar, glúteos, postura",
+      "description": "Elevar peito e pernas simultaneamente, segurar 2seg"
+    },
+    {
+      "id": 9,
+      "name": "Elevação de Panturrilha (Calf Raises)",
+      "sets": 3,
+      "reps": "15-20",
+      "focus": "Panturrilhas, propulsão",
+      "description": "Unilateral para maior desafio, amplitude completa"
+    },
+    {
+      "id": 10,
+      "name": "Flexão de Braço (Push-Up)",
+      "sets": 3,
+      "reps": "10-12",
+      "focus": "Peitoral, tríceps, core, postura de corrida",
+      "description": "Corpo reto, cotovelos 45° do corpo"
+    }
+  ],
+  "trainingZones": {
+    "zone1": {
+      "name": "Recuperação",
+      "hrPercent": "60-70%",
+      "pace": "6:00-6:30",
+      "description": "Corridas regenerativas e aquecimentos"
+    },
+    "zone2": {
+      "name": "Aeróbica",
+      "hrPercent": "70-80%",
+      "pace": "5:30-6:00",
+      "description": "Base aeróbica, maior volume de treino"
+    },
+    "zone3": {
+      "name": "Tempo",
+      "hrPercent": "80-87%",
+      "pace": "5:00-5:30",
+      "description": "Treinos de ritmo e tempo run"
+    },
+    "zone4": {
+      "name": "Limiar",
+      "hrPercent": "87-93%",
+      "pace": "4:40-5:00",
+      "description": "Pace de meia maratona e limiar anaeróbico"
+    },
+    "zone5": {
+      "name": "VO2max",
+      "hrPercent": "93-100%",
+      "pace": "4:20-4:40",
+      "description": "Intervalados intensos e velocidade máxima"
+    }
+  }
+}
+
