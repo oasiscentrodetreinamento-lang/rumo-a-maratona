@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { WorkoutLogModal, WorkoutLogData } from "@/components/WorkoutLogModal";
 import { ProgressCharts } from "@/components/ProgressCharts";
+import RacesCalendar from "@/components/RacesCalendar";
 
 interface TrainingData {
   athlete: {
@@ -365,7 +366,7 @@ export default function Home() {
 
         {/* Tabs */}
         <Tabs defaultValue="training" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4 bg-muted">
+          <TabsList className="grid w-full grid-cols-5 bg-muted">
             <TabsTrigger value="training">Plano de Treino</TabsTrigger>
             <TabsTrigger value="progress">
               <BarChart3 className="w-4 h-4 mr-2" />
@@ -373,6 +374,10 @@ export default function Home() {
             </TabsTrigger>
             <TabsTrigger value="strength">Fortalecimento</TabsTrigger>
             <TabsTrigger value="zones">Zonas de Treino</TabsTrigger>
+            <TabsTrigger value="races">
+              <Trophy className="w-4 h-4 mr-2" />
+              Provas
+            </TabsTrigger>
           </TabsList>
 
           {/* Training Plan Tab */}
@@ -611,7 +616,25 @@ export default function Home() {
             </Card>
           </TabsContent>
 
-          {/* Training Zones Tab */}
+             {/* Calendário de Provas */}
+          <TabsContent value="races" className="space-y-4">
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Trophy className="w-6 h-6 text-yellow-400" />
+                  Calendário de Provas 2025-2026
+                </CardTitle>
+                <CardDescription>
+                  Provas de corrida em MG, SP e RJ. Filtre por distância e estado. Provas marcadas com ⭐ são recomendadas para seu plano de treino.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <RacesCalendar />
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* Zonas de Treino */}
           <TabsContent value="zones" className="space-y-4">
             <Card className="bg-card border-border">
               <CardHeader>
